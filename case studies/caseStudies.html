@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Studies & ROI</title>
+  <link rel="stylesheet" href="./caseStudies.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+      <input id="search" class="search" type="search" placeholder="Search industry, company, or pain point..." />
+    </header>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="industry">By Industry</button>
+      <button class="tab" data-tab="roi">By ROI / Pain Point</button>
+    </div>
+
+    <section id="grid" class="grid"></section>
+  </main>
+
+  <div id="detail-overlay" class="overlay hidden">
+    <article class="detail">
+      <header class="detail-header">
+        <h2 id="detail-title"></h2>
+        <button id="close-detail" class="close-btn" type="button" aria-label="Close">&times;</button>
+      </header>
+      <div class="detail-body">
+        <p id="detail-company" class="company"></p>
+        <p id="detail-quote" class="quote"></p>
+        <p id="detail-impact" class="impact"></p>
+        <div class="cols">
+          <div>
+            <h3>Pain Points</h3>
+            <ul id="detail-pains"></ul>
+          </div>
+          <div>
+            <h3>VZC Solutions</h3>
+            <ul id="detail-solutions"></ul>
+          </div>
+        </div>
+        <a id="detail-link" class="watch" href="#" target="_blank" rel="noreferrer">Watch Video / Open Case</a>
+      </div>
+    </article>
+  </div>
+
+  <script src="./caseStudies.js"></script>
+</body>
+</html>
